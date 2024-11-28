@@ -1,0 +1,24 @@
+[package]
+name = "enchat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "=0.7.5", features = ["multipart"] }
+tokio = { version = "1.41.0", features = ["rt", "rt-multi-thread", "macros"] }
+log = "0.4.22"
+chrono = "0.4.38"
+tracing-subscriber = "0.3.18"
+uuid = { version = "1.10.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
+ed25519-dalek = { version = "2.1.1", features = ["pem"] }
+rusqlite = { version = "0.32.0", features = ["bundled"] }
+serde = { version = "1.0.210", features = ["derive"] }
+base64 = "0.22.1"
+urlencoding = "2.1.3"
+
+[[bin]]
+name = "install"
+[[bin]]
+name = "gen_db"
+[[bin]]
+name = "system_service"
