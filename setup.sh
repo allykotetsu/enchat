@@ -1,7 +1,7 @@
-cargo build --package messenger --release --bin install
-cargo build --package messenger --release --bin gen_db
-cargo build --package messenger --release --bin system_service
-cargo build --package messenger --release --bin messenger
+cargo build --package enchat --release --bin install
+cargo build --package enchat --release --bin gen_db
+cargo build --package enchat --release --bin system_service
+cargo build --package enchat --release --bin messenger
 ./target/release/install
 ./target/release/gen_db
 ./target/release/system_service
