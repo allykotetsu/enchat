@@ -8,9 +8,7 @@ After=syslog.target network-online.target
 
 [Service]
 Type=simple
-#WorkingDirectory={{}}
-#ExecStart=cargo run --package messenger --bin messenger
-ExecStart={}/target/release/messenger
+ExecStart={}/target/release/enchat
 Restart=on-failure
 RestartSec=10
 KillMode=process
